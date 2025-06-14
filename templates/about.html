@@ -195,6 +195,20 @@
       background-color: #0ef1d2;
     }
 
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    }
+
 </style>
 </head>
 <body>
@@ -220,48 +234,51 @@
   
 
     <div style="text-align: center; margin-bottom: 2rem;">
-      <a href="../static/assets/files/Venkata_Teja_Yanamala_Resume.pdf" class="button download" download style="display: inline-block; background: var(--primary); color: #000; padding: 0.7rem 1.5rem; font-weight: bold; border-radius: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(20, 255, 236, 0.3); transition: transform 0.2s ease;">
+      <a href="Venkata_Teja_Resume.pdf" class="button download" download style="display: inline-block; background: var(--primary); color: #000; padding: 0.7rem 1.5rem; font-weight: bold; border-radius: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(20, 255, 236, 0.3); transition: transform 0.2s ease;">
         📄 Download My Resume
       </a>
     </div>
 
     <section class="bio">
-      <img src="../static/assets/images/linkdin photo venkat.jpg" alt="Venkata Teja" />
+  <div class="card">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+      <img src="./tej%20pic.jpg" alt="Venkata Teja" />
       <div>
         <h2>Hi, I'm Venkata Teja 👋</h2>
-        
-<p class="tagline" style="font-style: italic; color: #aaa; margin-top: 0.5rem;">“Solving problems through code and creativity.”</p>
-        <p>
-          A full-stack developer and analyst with a creative edge. I build things that live on the web — from static portfolios to real-time dashboards and backend APIs.
-        </p>
-        <p>
-          My journey began with Python and bloomed into a blend of frontend finesse and backend power. I thrive on solving real problems, collaborating with teams, and constantly learning.
-        </p>
+        <p class="tagline" style="font-style: italic; color: #aaa; margin-top: 0.5rem;">“Solving problems through code and creativity.”</p>
+        <p>A full-stack developer and analyst with a creative edge. I build things that live on the web — from static portfolios to real-time dashboards and backend APIs.</p>
+        <p>My journey began with Python and bloomed into a blend of frontend finesse and backend power. I thrive on solving real problems, collaborating with teams, and constantly learning.</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <section id="experience" class="timeline">
-  <h2>Experience</h2>
-  <ul style="list-style: none; padding-left: 0;">
-    <li style="position: relative; padding-left: 1.5rem; margin-bottom: 1.5rem; border-left: 2px solid var(--primary);">
-      <span style="position: absolute; left: -9px; top: 0; width: 12px; height: 12px; background: var(--primary); border-radius: 50%;"></span>
-      <h3>Full Stack Projects <span style="color: #888; font-weight: normal;">(2022 – Present)</span></h3>
-      <p>Developed collaborative web apps using Flask, React, and REST APIs.</p>
-    </li>
-    <li style="position: relative; padding-left: 1.5rem; margin-bottom: 1.5rem; border-left: 2px solid var(--primary);">
-      <span style="position: absolute; left: -9px; top: 0; width: 12px; height: 12px; background: var(--primary); border-radius: 50%;"></span>
-      <h3>Python & Data Analytics Intern <span style="color: #888; font-weight: normal;">(2022)</span></h3>
-      <p>Worked at Nexes Info, Intrainz, Prodigy, Cognifyz, and YBI Foundation. Created tools with Pandas, Excel, and Power BI.</p>
-    </li>
-  </ul>
+  <div class="card">
+    <h2>Experience</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li style="position: relative; padding-left: 1.5rem; margin-bottom: 1.5rem; border-left: 2px solid var(--primary);">
+        <span style="position: absolute; left: -9px; top: 0; width: 12px; height: 12px; background: var(--primary); border-radius: 50%;"></span>
+        <h3>Full Stack Projects <span style="color: #888; font-weight: normal;">(2022 – Present)</span></h3>
+        <p>Developed collaborative web apps using Flask, React, and REST APIs.</p>
+      </li>
+      <li style="position: relative; padding-left: 1.5rem; margin-bottom: 1.5rem; border-left: 2px solid var(--primary);">
+        <span style="position: absolute; left: -9px; top: 0; width: 12px; height: 12px; background: var(--primary); border-radius: 50%;"></span>
+        <h3>Python & Data Analytics Intern <span style="color: #888; font-weight: normal;">(2022)</span></h3>
+        <p>Worked at Nexes Info, Intrainz, Prodigy, Cognifyz, and YBI Foundation. Created tools with Pandas, Excel, and Power BI.</p>
+      </li>
+    </ul>
+  </div>
 </section>
 
     <section id="education" class="education">
-      <h2>Education</h2>
-      <div class="entry"><h3>B.Tech in Computer Science</h3><span>Hindustan University</span><span class="percent">93%</span></div>
-      <div class="entry"><h3>Intermediate – MPC</h3><span>Sri Chaitanya College</span><span class="percent">92%</span></div>
-      <div class="entry"><h3>SSC – Nalanda High School</h3><span>State Board</span><span class="percent">100%</span></div>
-    </section>
+  <div class="card">
+    <h2>Education</h2>
+    <div class="entry"><h3>B.Tech in Computer Science</h3><span>Hindustan University</span><span class="percent">93%</span></div>
+    <div class="entry"><h3>Intermediate – MPC</h3><span>Sri Chaitanya College</span><span class="percent">92%</span></div>
+    <div class="entry"><h3>SSC – Nalanda High School</h3><span>State Board</span><span class="percent">100%</span></div>
+  </div>
+</section>
 
     
   
@@ -274,37 +291,43 @@
     </section>
 
     <section id="certs" class="certs">
-      <h2>Certifications</h2>
-      <ul class="columns">
-        <li>Python – Infosys Springboard</li>
-        <li>ML – Great Learning</li>
-        <li>UX/UI – Coursera</li>
-        <li>AI for Everyone – DeepLearning.AI</li>
-        <li>Data Analytics – Google</li>
-        <li>Java, DBMS – NPTEL</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Certifications</h2>
+    <ul class="columns">
+      <li>Python – Infosys Springboard</li>
+      <li>ML – Great Learning</li>
+      <li>UX/UI – Coursera</li>
+      <li>AI for Everyone – DeepLearning.AI</li>
+      <li>Data Analytics – Google</li>
+      <li>Java, DBMS – NPTEL</li>
+    </ul>
+  </div>
+</section>
 
     <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>💧 Automated Plant Watering System (IoT + Arduino)</li>
-        <li>🏡 Greenhouse Monitoring & Control System</li>
-        <li>📊 T20 Cricket Match Analytics – Python + Stats</li>
-        <li>📈 Expense Tracker with Power BI + Excel</li>
-        <li>🌐 Portfolio Website with Animations</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li>💧 Automated Plant Watering System (IoT + Arduino)</li>
+      <li>🏡 Greenhouse Monitoring & Control System</li>
+      <li>📊 T20 Cricket Match Analytics – Python + Stats</li>
+      <li>📈 Expense Tracker with Power BI + Excel</li>
+      <li>🌐 Portfolio Website with Animations</li>
+    </ul>
+  </div>
+</section>
 
     <section id="extras" class="extras">
-      <h2>Achievements</h2>
-      <ul>
-        <li>🏆 Physics Olympiad Certificate</li>
-        <li>🎖️ NCC Cadet & NSS Volunteer</li>
-        <li>💬 IEEE Member – participated in tech sessions</li>
-        <li>👨‍💻 Hackathon & Club Participation</li>
-      </ul>
-    </section>
+  <div class="card">
+    <h2>Achievements</h2>
+    <ul>
+      <li>🏆 Physics Olympiad Certificate</li>
+      <li>🎖️ NCC Cadet & NSS Volunteer</li>
+      <li>💬 IEEE Member – participated in tech sessions</li>
+      <li>👨‍💻 Hackathon & Club Participation</li>
+    </ul>
+  </div>
+</section>
 
     <section id="contact" class="contact">
       <h2>Let’s Work Together</h2>
@@ -312,6 +335,38 @@
       <p><strong>📧</strong> <a href="mailto:venkatateja310@gmail.com">venkatateja310@gmail.com</a></p>
       <p><strong>🔗</strong> <a href="https://linkedin.com/in/yanamala-venkata-teja-21b910262" target="_blank">LinkedIn</a></p>
       <p><strong>💻</strong> <a href="https://github.com/venkatateja0520" target="_blank">GitHub</a></p>
+    </section>
+
+    <section id="extras-2" class="extras">
+      <h2>Fun Facts</h2>
+      <ul>
+        <li>☕ Coffee-powered coding sessions.</li>
+        <li>🎧 I code better with music on — lo-fi beats are my jam.</li>
+        <li>📚 Currently reading: “Atomic Habits”</li>
+        <li>🧩 I enjoy solving algorithmic puzzles & real-world problems.</li>
+      </ul>
+    </section>
+
+    <section id="leetcode" class="projects">
+  <h2>Competitive Coding</h2>
+  <div class="card">
+    <h3>🧠 LeetCode Profile</h3>
+    <p>I enjoy solving algorithmic challenges and data structures problems daily. Here's a link to my profile:</p>
+    <a href="https://leetcode.com/u/TiBEGwUpLw/" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: underline;">Visit My LeetCode</a>
+  </div>
+</section>
+
+    <section id="testimonials" class="education">
+      <h2>Testimonials</h2>
+      <blockquote style="font-style: italic; color: #ccc; border-left: 4px solid var(--primary); padding-left: 1rem;">
+        “Venkata is a highly motivated learner who adapts quickly and delivers with precision.” <br>– Project Mentor
+      </blockquote>
+    </section>
+
+    <section id="calendar" class="skills">
+      <h2>Availability</h2>
+      <p>Want to connect or discuss an opportunity?</p>
+      <a href="https://calendly.com/your-link" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: underline;">📅 Book a time with me on Calendly</a>
     </section>
   </div>
 
